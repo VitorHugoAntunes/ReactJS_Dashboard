@@ -10,6 +10,7 @@ export const GlobalStyles = createGlobalStyle`
     --input-bg: #0D0D0D; 
     --input-color: #555758; 
     --danger-color: #ef233c;
+    --success-color: #17B169;
 
     --gray-300: #2C2C2C;
     --gray-200: #474747;
