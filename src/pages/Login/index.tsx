@@ -109,14 +109,6 @@ export default function Login() {
 
                     <button>Sign in</button>
                     <a href="">Esqueci minha senha</a>
-
-                    {loggedUser && (
-                        <div>
-                            <p>Bem vindo {loggedUser.email}</p>
-                            <p>Seu token é {loggedUser.token}</p>
-                        </div>
-
-                    )}
                 </form>
             </LoginFormContainer>
         </LoginContainer>

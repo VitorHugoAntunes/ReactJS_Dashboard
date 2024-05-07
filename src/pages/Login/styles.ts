@@ -57,6 +57,7 @@ export const LoginFormContainer = styled.div`
 
         input {
             padding: 0.8rem 1.5rem;
+            height: 3rem;
             width: 100%;
             border: none;
             border-radius: 6px;
@@ -72,7 +73,6 @@ export const LoginFormContainer = styled.div`
 
         button {
             display: flex;
-            flex: 1;
             align-items: center;
             justify-content: center;
             border: none;
@@ -80,6 +80,7 @@ export const LoginFormContainer = styled.div`
             font-size: var(--subtitle-text);
             color: var(--text-color);
             background: var(--accent-color);
+            height: 3rem;
             padding: 0.8rem 1.5rem;
             transition: 0.2s;
             color: var(--input-bg);
@@ -92,6 +93,10 @@ export const LoginFormContainer = styled.div`
         a {
             width: fit-content;
             margin-left: auto;
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
 
         span {
