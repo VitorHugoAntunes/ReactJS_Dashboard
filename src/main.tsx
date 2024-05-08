@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
-import { LoggedUserProvider } from './contexts/LoggedUser.tsx'
+import { LoggedUserProvider } from './contexts/LoggedUserContext.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

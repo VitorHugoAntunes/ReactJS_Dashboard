@@ -5,28 +5,28 @@ import { Container } from "./styles";
 const faqs = [
     {
         id: 1,
-        question: 'Como faço para resetar minha senha?',
-        answer: 'Clique em "Esqueci minha senha" na tela de login e siga as instruções.'
+        question: 'Como faço para exportar meus dados?',
+        answer: 'Clique no menu de Todos os Clientes e depois clique em "Exportar dados". Os dados serão exportados para uma planilha de Excel e você pode visualizar, editar ou compartilhar.'
     },
     {
         id: 2,
-        question: 'Como faço para alterar meu nome de usuário?',
-        answer: 'Clique em "Editar perfil" na tela de configurações e altere o campo "Nome de usuário".'
+        question: 'Como faço para exportar meus dados?',
+        answer: 'Clique no menu de Todos os Clientes e depois clique em "Exportar dados". Os dados serão exportados para uma planilha de Excel e você pode visualizar, editar ou compartilhar.'
     },
     {
         id: 3,
-        question: 'Como faço para alterar minha foto de perfil?',
-        answer: 'Clique em "Editar perfil" na tela de configurações e altere o campo "Foto de perfil".'
+        question: 'Como faço para exportar meus dados?',
+        answer: 'Clique no menu de Todos os Clientes e depois clique em "Exportar dados". Os dados serão exportados para uma planilha de Excel e você pode visualizar, editar ou compartilhar.'
     },
     {
         id: 4,
-        question: 'Como faço para alterar meu e-mail?',
-        answer: 'Clique em "Editar perfil" na tela de configurações e altere o campo "E-mail".'
+        question: 'Como faço para exportar meus dados?',
+        answer: 'Clique no menu de Todos os Clientes e depois clique em "Exportar dados". Os dados serão exportados para uma planilha de Excel e você pode visualizar, editar ou compartilhar.'
     },
     {
         id: 5,
-        question: 'Como faço para alterar minha senha?',
-        answer: 'Clique em "Editar perfil" na tela de configurações e altere o campo "Senha".'
+        question: 'Como faço para exportar meus dados?',
+        answer: 'Clique no menu de Todos os Clientes e depois clique em "Exportar dados". Os dados serão exportados para uma planilha de Excel e você pode visualizar, editar ou compartilhar.'
     }
 ]
 

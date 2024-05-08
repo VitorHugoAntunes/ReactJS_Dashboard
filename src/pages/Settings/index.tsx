@@ -4,12 +4,19 @@ import { SettingsContainer } from "./styles";
 import darkModeImage from '../../assets/dark_mode_wireframe.svg'
 import lightModeImage from '../../assets/light_mode_wireframe.svg'
 
+import useTheme from '../../hooks/useTheme'
+
 export default function Settings() {
+    const { activeTheme, changeTheme } = useTheme()
+
     function handleBoxClick(radioButtonId: string) {
         const radioButton = document.getElementById(radioButtonId) as HTMLInputElement;
         if (radioButton) {
             radioButton.checked = true;
         }
+
+        changeTheme(radioButtonId);
+        console.log(activeTheme);
     }
 
     return (
@@ -20,13 +27,13 @@ export default function Settings() {
                 <h3>Appearance</h3>
 
                 <section>
-                    <Box onClick={() => handleBoxClick('default')}>
+                    <Box onClick={() => handleBoxClick('defaultMode')}>
                         <div>
                             <img src={darkModeImage} alt="Dark mode" />
                         </div>
                         <div>
                             <label>Default</label>
-                            <input type="radio" defaultChecked id="default" name="mode" />
+                            <input type="radio" defaultChecked id="defaultMode" name="mode" />
                         </div>
                     </Box>
 
