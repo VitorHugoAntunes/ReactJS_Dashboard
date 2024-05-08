@@ -40,7 +40,7 @@ export default function Profile() {
                     <Box>
                         <InfoContainer>
                             <InfoDiv>
-                                <h3>Token de acesso</h3>
+                                <h3>Token de acesso:</h3>
 
                                 <div>
                                     <input id='loggedUserToken' type='text' value={loggedUser.token} readOnly />
