@@ -1,14 +1,4 @@
-import styled, { keyframes } from 'styled-components';
-
-// Keyframes para animação da altura máxima ao abrir
-const expandHeight = keyframes`
-  from {
-    max-height: 0;
-  }
-  to {
-    max-height: 400px;
-  }
-`;
+import styled from 'styled-components';
 
 export const ListItem = styled.li<{ open: boolean }>`
   background-color: var(--gray-300);

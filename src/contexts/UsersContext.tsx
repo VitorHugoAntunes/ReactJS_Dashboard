@@ -1,6 +1,5 @@
 import { ReactNode } from 'react'
 import { createContext, useState, useEffect } from 'react';
-import axios from 'axios';
 import useUserTokenContext from '../hooks/useUserToken';
 import { useLocation } from 'react-router-dom';
 import users from '../data/users.json'
@@ -35,10 +34,10 @@ const USERS_DATA_STORAGE_KEY = 'admin:1.0.0:usersData';
 
 export function UsersProvider({ children }: UsersProviderProps) {
     const [usersData, setUsersData] = useState<User[]>([]);
-    const [localData, setLocalData] = useState<User[]>([]);
+    // const [setLocalData] = useState<User[]>([]);
     const [dataLoading, setDataLoading] = useState<boolean>(true);
 
-    const { userToken, setUserToken } = useUserTokenContext();
+    const { setUserToken } = useUserTokenContext();
 
     const location = useLocation();
 
@@ -46,7 +45,7 @@ export function UsersProvider({ children }: UsersProviderProps) {
         setUserToken(localStorage.getItem('admin:1.0.0:token') || '');
 
         const localUsersData = localStorage.getItem(USERS_DATA_STORAGE_KEY);
-        setLocalData(JSON.parse(localUsersData || 'null'));
+        // setLocalData(JSON.parse(localUsersData || 'null'));
 
         // Verifica se já existe dados locais, se não, puxa do arquivo JSON
         if (!localUsersData) {

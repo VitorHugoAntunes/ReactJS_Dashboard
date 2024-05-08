@@ -5,14 +5,14 @@ import { FiUsers, FiCreditCard } from 'react-icons/fi';
 import Chart from "../../components/Chart";
 
 import useUsersData from '../../hooks/useUsersData';
-import { Navigate } from "react-router-dom";
+// import { Navigate } from "react-router-dom";
 import Loading from "../../components/Loading";
 
-const LOGGED_USER_STORAGE_KEY = 'admin:1.0.0:loggedUser';
+// const LOGGED_USER_STORAGE_KEY = 'admin:1.0.0:loggedUser';
 
 export default function Dashboard() {
     const { usersData, dataLoading } = useUsersData();
-    const localLoggedUserData = localStorage.getItem(LOGGED_USER_STORAGE_KEY);
+    // const localLoggedUserData = localStorage.getItem(LOGGED_USER_STORAGE_KEY);
 
     return (
         <DashboardContainer>
