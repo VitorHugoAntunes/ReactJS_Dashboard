@@ -1,27 +1,33 @@
-# React + TypeScript + Vite
+# ReactJS Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![ReactJS Dashboard](https://raw.githubusercontent.com/VitorHugoAntunes/ReactJS_Dashboard/main/src/assets/presentationImage.PNG "ReactJS Dashboard")
 
-Currently, two official plugins are available:
+Dashboard criada com ReactJS e styled components.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Instalação
 
-## Expanding the ESLint configuration
+Para utilizar este projeto, clone ele para o seu computador:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+```bash
+  https://github.com/VitorHugoAntunes/ReactJS_Dashboard.git
+  cd ReactJS_Dashboard
+  npm i
+  npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Para rodar o projeto, certifique-se que tenha o NodeJS instalado em seu computador, e ao rodar `npm run dev` basta abrir o link em seu navegador padrão.
+
+## Tecnologias utilizadas
+
+- ReactJS
+- Typescript
+- Styled components
+- React-hook-form
+- React-hot-toast
+- Xlsx
+- Recharts
+
+
+## Autor
+
+- [Vitor Hugo](https://github.com/VitorHugoAntunes/)
